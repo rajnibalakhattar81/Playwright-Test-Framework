@@ -1,0 +1,53 @@
+{
+  "name": "playwright-test-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build-file": "tsc main.ts",
+    "start": "node dist/main.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report:html": "playwright show-report",
+    "test:allure": "playwright test --reporter=list,allure-playwright",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report", 
+    "test:debug": "playwright test --debug",               
+    "test:smoke": "npx playwright test --grep @smoke", 
+    "test:regression": "npx playwright test --grep @regression",       
+    "test:ci": "npx playwright test --reporter=list",          
+    "test:retry": "npx playwright test --retries=2", 
+    "clean:reports": "Remove-Item -Recurse -Force playwright-report, test-results, allure-results, allure-report", 
+    "coverage": "npx nyc --reporter=lcov playwright test"
+
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.7.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "acorn": "^8.16.0",
+    "acorn-walk": "^8.3.5",
+    "arg": "^4.1.3",
+    "create-require": "^1.1.1",
+    "diff": "^4.0.4",
+    "make-error": "^1.3.6",
+    "playwright": "^1.59.1",
+    "playwright-core": "^1.59.1",
+    "undici-types": "^7.18.2",
+    "v8-compile-cache-lib": "^3.0.1",
+    "yn": "^3.1.1"
+  }
+}

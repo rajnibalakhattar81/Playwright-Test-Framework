@@ -1,0 +1,38 @@
+# Auto-detect text files and normalize to LF in repo
+* text=auto
+
+# --- Source code (force LF) ---
+*.ts     text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.md     text eol=lf
+
+# --- Playwright / test artifacts ---
+*.spec.ts text eol=lf
+*.config.ts text eol=lf
+
+# --- Shell scripts (important for CI like Jenkins/Linux agents) ---
+*.sh     text eol=lf
+
+# --- Windows scripts ---
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# --- Binary files (no line ending changes) ---
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.zip    binary
+*.tar    binary
+*.gz     binary
+*.mp4    binary
+
+# --- Playwright reports (avoid diff noise) ---
+playwright-report/** binary
+test-results/** binary
