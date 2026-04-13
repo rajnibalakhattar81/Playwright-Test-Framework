@@ -17,7 +17,7 @@ export const TEST_DATA_PATH = path.join(
   process.cwd(),
   'src',
   'resources',
-  'testdata.json'
+  'testData.json'
 );
 
 export const LOGIN_LOCATORS_PATH = path.join(
