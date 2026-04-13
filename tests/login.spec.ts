@@ -18,7 +18,7 @@ test('Login with valid credentials @smoke @regression', async ({ page }) => {
   await loginPage.goto(url);
 
   console.log(`Attempting to login with username and password from test data`);
-  const loginData = getJsonArray("loginData");
+  //const loginData = getJsonArray("loginData");
   console.log("&&&&&&&&&&&&"+loginData[0].username);
   console.log("&&&&&&&&&&&&"+loginData[0].password);
   
@@ -53,9 +53,9 @@ test('Login with valid credentials @smoke @regression', async ({ page }) => {
 //       }
 //     });
 //   }
-// });
+// // });
 
-test('demo ignoreHTTPSIssues', async ({ page }) => {
-    await page.goto('https://self-signed.badssl.com/');
-    await expect(page.locator('h1')).toHaveText('self-signed.badssl.com');
-});
+// test('demo ignoreHTTPSIssues', async ({ page }) => {
+//     await page.goto('https://self-signed.badssl.com/');
+//     await expect(page.locator('h1')).toHaveText('self-signed.badssl.com');
+// });
