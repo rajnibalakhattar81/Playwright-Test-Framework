@@ -2,10 +2,12 @@ import fs from 'fs';
 import { TEST_DATA_PATH, LOGIN_LOCATORS_PATH } from '../constants/constants.js';
 
 
+
 console.log(`Loading test data from: ${TEST_DATA_PATH}`);
 console.log(`Loading login locators from: ${LOGIN_LOCATORS_PATH}`);
 
 const testDataPath = TEST_DATA_PATH;
+console.log('Resolved path********************:', testDataPath);
 //const loginLocatorsPath = LOGIN_LOCATORS_PATH;
 
 // Utility to load and parse JSON once

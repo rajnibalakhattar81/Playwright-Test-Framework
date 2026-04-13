@@ -11,6 +11,8 @@ import { fileURLToPath } from 'url';
 
 import path from 'path';
 
+console.log('CWD^^^^^^^^^^^^^^:', process.cwd());
+
 export const TEST_DATA_PATH = path.join(
   process.cwd(),
   'src',
