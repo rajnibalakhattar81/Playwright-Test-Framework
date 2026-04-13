@@ -3,3 +3,5 @@ adding new line from remote
 adding from local again
 adding line 2 from remote
 adding line 2 from local
+adding line 3 from remote
+
