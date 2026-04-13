@@ -1,3 +1,4 @@
 "main line 1" 
 adding new line from remote
 adding from local again
+adding line 2 from remote
